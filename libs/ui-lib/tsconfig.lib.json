@@ -2,6 +2,7 @@
   "extends": "../tsconfig.lib-common.json",
   "compilerOptions": {
     "allowJs": true,
+    "declarationMap": true,
     "outDir": "../../dist/out-tsc/libs/ui-lib"
   }
 }
