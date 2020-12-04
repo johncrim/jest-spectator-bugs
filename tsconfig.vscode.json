@@ -1,0 +1,25 @@
+{ // tsconfig inherited by 'tsconfig.json' files in each project, used for
+  // code editing/intellisense, etc.
+  "extends": "./tsconfig.base.json",
+  "compilerOptions": {
+    "outDir": "./dist/out-tsc/vscode",
+    "allowJs": true,
+    "types": [
+      "tslib",
+      "jest"
+    ],
+    "paths": {
+      "@this/*": [
+        "libs/*/src/public-api.ts"
+      ]
+    }
+  },
+  "include": [
+    "**/*.ts"
+  ],
+  "exclude": [
+    "node_modules",
+    "tmp",
+    "karma"
+  ]
+}

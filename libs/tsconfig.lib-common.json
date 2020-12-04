@@ -1,0 +1,25 @@
+{
+  "extends": "../tsconfig.base.json",
+  "compilerOptions": {
+    "declaration": true,
+    "inlineSources": true,
+    "stripInternal": true,
+    "types": [],
+    "paths": {
+      "@this/*": [
+        "dist/*"
+      ]
+    }
+  },
+  "angularCompilerOptions": {
+    //"annotateForClosureCompiler": true,
+    "skipTemplateCodegen": true,
+    "strictMetadataEmit": true,
+    "enableResourceInlining": true,
+  },
+  "exclude": [
+    "**/*.spec.ts",
+    "**/*.karma-spec.ts",
+    "**/test/**"
+  ]
+}

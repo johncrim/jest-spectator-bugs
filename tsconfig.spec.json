@@ -1,0 +1,29 @@
+{
+  "extends": "./tsconfig.base.json",
+  "compilerOptions": {
+    "outDir": "./dist/out-tsc/spec",
+    "module": "commonjs",
+    "allowJs": true,
+    "emitDecoratorMetadata": true,
+    "types": [
+      "tslib",
+      "jest",
+      "node"
+    ],
+    "paths": {
+      "@this/*": [
+        "libs/*/src/public-api.ts"
+      ]
+    }
+  },
+  "include": [
+    "**/*.spec.ts",
+    "**/*.d.ts"
+  ],
+  "exclude": [
+    "node_modules",
+    "tmp",
+    "karma",
+    "**/*.karma-spec.ts",
+  ]
+}

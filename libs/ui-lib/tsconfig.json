@@ -1,0 +1,9 @@
+{
+  "extends": "../../tsconfig.vscode.json",
+  "compilerOptions": {
+    "outDir": "../../dist/vscode-tsc/libs/ui-lib",
+  },
+  "include": [
+    "**/*.ts"
+  ]
+}
