@@ -1,6 +1,4 @@
-# Bug Repro for jest-preset-angular
-
-This repo is a bug repro for https://github.com/thymikee/jest-preset-angular/issues/622 .
+# Bug Repro for spectator and jest using jest-preset-angular
 
 Repo created from https://github.com/johncrim/ng-jest-starter .
 
